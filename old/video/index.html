@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>Hypercomp Test Server</title>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  </head>
+
+  <body>
+    <div id="head">
+      <h1>Hypercomp&nbsp;HLS&nbsp;Test&nbsp;Server</h1>
+    </div>
+
+    <div class="content">
+      <div id="videotitle"><h3>Episode 11 - Plagued</h3></div>
+
+      <div id="Controls">
+        <form id="formControls" name="controls">
+        Time (in seconds):
+        <input type="number" name="Time" min="0" value="0" required>
+        <input type="button" onclick="return seekToTime()" value="Seek">
+        </form>
+      </div>
+
+      <div id="videocontent">
+        <video id="video" autoplay controls poster="011/slide11.PNG"></video>
+        <video id="backup" src="011/master-mole.m3u8" autoplay controls poster="011/slide11.PNG"></video>
+        <div id="videoError"></div>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+  </body>
+</html>

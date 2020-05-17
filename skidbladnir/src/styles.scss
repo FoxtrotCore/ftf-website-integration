@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Titillium Web";
+  src: url(assets/fonts/TitilliumWeb-Regular.ttf) format("opentype");
+}
+
+$default-font: "Titillium Web", "Barlow Condensed", "Open Sans Condensed";
+$video-player-font: sans-serif;
+$primary-color: rgb(0, 0, 0);
+$primary-background: rgb(63, 63, 63);
+$content-background: rgb(220, 220, 220);
+
+* {
+  font-family: $default-font;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: $primary-color;
+  background-color: $primary-background;
+}
+
+.content {
+  background-color: $content-background;
+  margin: 2em auto;
+  padding: 2em;
+  width: 80vw;
+}
