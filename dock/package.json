@@ -1,0 +1,29 @@
+{
+  "name": "dock",
+  "version": "1.0.0",
+  "description": "A back-end service for authenticating users, talking to GCS on behalf of the client, and serving stream data.",
+  "main": "server.js",
+  "scripts": {
+    "test": "node tests/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FoxtrotCore/dock-skid.git"
+  },
+  "author": "Foxtrot Fanatics",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FoxtrotCore/dock-skid/issues"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "*",
+    "colors": "^1.4.0",
+    "express": "^4.17.1",
+    "http": "*",
+    "path": "*"
+  },
+  "homepage": "https://github.com/FoxtrotCore/dock-skid#readme",
+  "devDependencies": {
+    "node-test": "^1.2.4"
+  }
+}

@@ -1,7 +1,5 @@
 # Dock Skid
 
-Composed of
-
 ## [Dock](dock)
 
 A front-end web application for logging in and serving content via an HLS player.

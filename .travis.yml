@@ -10,6 +10,9 @@ cache:
      - ./node_modules
 
 install:
+  - cd dock
+  - npm install
+  - cd ..
   - cd skidbladnir
   - npm install
   - cd ..
@@ -17,5 +20,9 @@ install:
 jobs:
   include:
     - script:
+        - cd dock
+        - npm test
+        - cd ..
         - cd skidbladnir
         - npm run test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
+        - cd ..

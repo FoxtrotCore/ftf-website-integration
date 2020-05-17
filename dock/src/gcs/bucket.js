@@ -1,10 +1,10 @@
-const {Storage} = require('@google-cloud/storage');
+const { Storage } = require('@google-cloud/storage');
 const path = require('path');
 
-const AUTH_FILE_PATH = path.join(process.env.HOME, "/.ssh/ftf-test1-key.json");
+const AUTH_FILE_PATH = path.join(process.env.HOME, "/.ssh/ftf-gcs-key.json");
 
 const storage = new Storage({
-    projectId: 'ftu-ftp',
+    projectId: 'foxtrotcore',
     keyFilename: AUTH_FILE_PATH,
 });
 
@@ -18,7 +18,7 @@ module.exports = {
    */
   isServiceAccountValidated: async function() {
     const [buckets] = await storage.getBuckets();
-    return buckets.length !== 0;
+    return buckets.length != 0;
   },
   /**
    * getBuckets - Gets a list of all available bucket names.
