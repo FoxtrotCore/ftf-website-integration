@@ -9,7 +9,7 @@ String.prototype.toTitleCase = function() {
 
 module.exports.log = function(mode, message){
 	mode = mode.toUpperCase();
-  const date = new Date().toTimeString();
+  const date = new Date().toISOString();
 	const msg = "[" + mode + "] [" + date + "]: " + message;
 
 	switch (mode) {
@@ -22,7 +22,7 @@ module.exports.log = function(mode, message){
               break;
 		}
 		case 'WARN': {
-							console.error(msg.orange);
+							console.log(msg.magenta);
 							break;
 		}
 		case 'DEBUG': {

@@ -17,10 +17,12 @@
   },
   "dependencies": {
     "@google-cloud/storage": "*",
+    "arc-topromise": "^1.0.3",
     "colors": "^1.4.0",
     "express": "^4.17.1",
     "http": "*",
-    "path": "*"
+    "path": "*",
+    "sqlite3": "^4.2.0"
   },
   "homepage": "https://github.com/FoxtrotCore/dock-skid#readme",
   "devDependencies": {

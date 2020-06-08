@@ -18,6 +18,7 @@ $content-background: rgb(220, 220, 220);
 body {
   color: $primary-color;
   background-color: $primary-background;
+  overflow-x: hidden;
 }
 
 .content {
